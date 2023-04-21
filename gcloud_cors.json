@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["https://localhost:3000", "http://localhost:3000", "https://www.li-f.de"],
+    "method": ["GET"],
+    "responseHeader": ["*"]
+  }
+]
