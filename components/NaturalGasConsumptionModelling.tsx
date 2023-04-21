@@ -54,15 +54,19 @@ export const NaturalGasConsumptionModelling = () => {
             label: "Historic Natural Gas Consumption",
             data: historicConsumptionData,
             fill: false,
-            borderColor: "rgba(230, 230, 230, 0.6)",
+            borderColor: "rgba(230, 230, 230, 0.4)",
+            borderWidth: 1,
             tension: 0.1,
+            yAxisID: "consumptionScale",
           },
           {
             label: "Historic Temperatures",
             data: historicTemperatureData,
             fill: false,
             borderColor: "rgba(255, 99, 132, 1.0)",
+            borderWidth: 1,
             tension: 0.1,
+            yAxisID: "temperatureScale",
           },
           {
             label: "Natural Gas Consumption Forecast",
@@ -72,19 +76,34 @@ export const NaturalGasConsumptionModelling = () => {
             ],
             fill: false,
             borderColor: "rgba(230, 230, 230, 1.0)",
+            borderWidth: 1,
             tension: 0.1,
+            yAxisID: "consumptionScale",
           },
         ],
       },
       options: {
         responsive: true,
         maintainAspectRatio: true,
+        scales: {
+          consumptionScale: {
+            type: "linear",
+            display: true,
+            position: "left",
+            beginAtZero: true,
+          },
+          temperatureScale: {
+            type: "linear",
+            display: true,
+            position: "right",
+          }
+        },
       },
     });
 
     return () => {
-      myChart.destroy()
-    }
+      myChart.destroy();
+    };
   }, [data]);
 
   // Make canvas full width but keep aspect ratio
