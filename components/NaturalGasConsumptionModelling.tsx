@@ -1,5 +1,6 @@
 import React from "react";
 import Chart from "chart.js/auto";
+import "chartjs-adapter-date-fns";
 
 export const NaturalGasConsumptionModelling = () => {
   // Get the data from the Google Cloud Storage backend
@@ -24,31 +25,24 @@ export const NaturalGasConsumptionModelling = () => {
   React.useEffect(() => {
     if (Object.keys(data).length === 0) return;
 
-    const historicConsumptionData = Object.values(
+    // Turn dict of data {date: value} into array of values [{x: date, y: value}, {x: date, y: value}, ...]
+    const historicConsumptionData = Object.entries(
       data.historic_consumption_data
-    );
-    const historicTemperatureData = Object.values(
+    ).map(([date, value]) => ({ x: date, y: value }));
+
+    const historicTemperatureData = Object.entries(
       data.historic_temperature_data
-    );
+    ).map(([date, value]) => ({ x: date, y: value }));
 
-    const forecastConsumptionData = Object.values(
+    const forecastConsumptionData = Object.entries(
       data.natural_gas_consumption_forecast
-    );
-
-    const timeline = [
-      ...Object.keys(data.historic_consumption_data),
-      ...Object.keys(data.natural_gas_consumption_forecast),
-    ];
+    ).map(([date, value]) => ({ x: date, y: value }));
 
     const ctx = document.getElementById("chart") as HTMLCanvasElement;
-
-    // Make sure canvas is not in use
-    // if (ctx) ctx.remove();
 
     const myChart = new Chart(ctx, {
       type: "line",
       data: {
-        labels: timeline,
         datasets: [
           {
             label: "Historic Natural Gas Consumption",
@@ -63,17 +57,14 @@ export const NaturalGasConsumptionModelling = () => {
             label: "Historic Temperatures",
             data: historicTemperatureData,
             fill: false,
-            borderColor: "rgba(255, 99, 132, 1.0)",
+            borderColor: "rgba(255, 99, 132, 0.4)",
             borderWidth: 1,
             tension: 0.1,
             yAxisID: "temperatureScale",
           },
           {
             label: "Natural Gas Consumption Forecast",
-            data: [
-              ...Array(historicConsumptionData.length).fill(null),
-              ...forecastConsumptionData,
-            ],
+            data: forecastConsumptionData,
             fill: false,
             borderColor: "rgba(230, 230, 230, 1.0)",
             borderWidth: 1,
@@ -86,6 +77,13 @@ export const NaturalGasConsumptionModelling = () => {
         responsive: true,
         maintainAspectRatio: true,
         scales: {
+          x: {
+            type: "time",
+            time: {
+              unit: "day",
+            },
+            
+          },
           consumptionScale: {
             type: "linear",
             display: true,
@@ -96,7 +94,7 @@ export const NaturalGasConsumptionModelling = () => {
             type: "linear",
             display: true,
             position: "right",
-          }
+          },
         },
       },
     });
