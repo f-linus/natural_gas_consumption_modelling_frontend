@@ -105,5 +105,10 @@ export const NaturalGasConsumptionModelling = () => {
   }, [data]);
 
   // Make canvas full width but keep aspect ratio
-  return <canvas id="chart" ref={chartRef} className="w-full" />;
+  return (
+    <div>
+    <canvas id="chart" ref={chartRef} className="w-full" />
+    <p className="text-right">model last run at {data.last_consumption_forecast}</p>
+    </div>
+  )
 };
