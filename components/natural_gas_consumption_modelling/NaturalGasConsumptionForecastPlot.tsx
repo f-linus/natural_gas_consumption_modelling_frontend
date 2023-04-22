@@ -10,6 +10,7 @@ export const NaturalGasConsumptionForecastPlot = (props: any) => {
     forecastedConsumptionEnabled = true,
     forecastedTemperaturesEnabled = true,
     borderWidth = 1,
+    height = 750,
     daysHistoric,
     daysForecasted,
   } = props;
@@ -152,7 +153,7 @@ export const NaturalGasConsumptionForecastPlot = (props: any) => {
       },
       options: {
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         scales: {
           x: {
             type: "time",
@@ -202,7 +203,7 @@ export const NaturalGasConsumptionForecastPlot = (props: any) => {
 
   // Make canvas full width but keep aspect ratio
   return (
-    <div className="mb-14">
+    <div className="mb-14" style={{height: height}}>
       <canvas ref={chartRef} className="w-full" />
       <p className="text-right text-gray-300">
         last model run {last_model_run_ago} hours ago
