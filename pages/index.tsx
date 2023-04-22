@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
       <div className="p-28">
-        <h2 className="text-5xl mb-20">Natural gas consumption modelling</h2>
+        <h2 className="text-5xl mb-20">Natural gas consumption in Germany</h2>
         <NaturalGasConsumptionModelling />
       </div>
     </main>
