@@ -1,6 +1,5 @@
 import React from "react";
-import { TotalTimeHorizonPlot } from "./natural_gas_consumption_modelling/TotalTimeHorizonPlot";
-import { NearTermTimeHorizonPlot } from "./natural_gas_consumption_modelling/NearTermTimeHorizonPlot";
+import { NaturalGasConsumptionForecastPlot } from "./natural_gas_consumption_modelling/NaturalGasConsumptionForecastPlot";
 
 export const NaturalGasConsumptionModelling = () => {
   // Get the data from the Google Cloud Storage backend
@@ -22,7 +21,7 @@ export const NaturalGasConsumptionModelling = () => {
 
   return (
     <div>
-      <TotalTimeHorizonPlot data={data} />
+      <NaturalGasConsumptionForecastPlot data={data} forecastedTemperaturesEnabled={false}/>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
@@ -33,7 +32,7 @@ export const NaturalGasConsumptionModelling = () => {
         euismod, nisl vel tincidunt lacinia, nisl nisl aliquet
       </p>
 
-      <NearTermTimeHorizonPlot data={data} />
+      <NaturalGasConsumptionForecastPlot data={data} daysHistoric={7} daysForecasted={14} borderWidth={2.5}/>
     </div>
   );
 };
