@@ -134,7 +134,7 @@ export const NaturalGasConsumptionModelling = () => {
         nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel
       </p>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div>
           <h4 className="text-3xl mt-14 mb-6">Data</h4>
 

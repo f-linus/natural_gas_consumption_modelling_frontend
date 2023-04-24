@@ -19,13 +19,13 @@ export default function Home() {
           <div className="flex flex-col">
             <a
               href="https://www.linkedin.com/in/linus-folkerts-3276841b7/"
-              className="text-9xl hover:text-gray-400"
+              className="text-8xl md:text-9xl hover:text-gray-400"
             >
               Linus Folkerts
             </a>
           </div>
         </div>
-        <div className="p-28">
+        <div className="p-2 lg:p-28">
           <h2 className="text-5xl mb-20">Natural gas consumption in Germany</h2>
           <NaturalGasConsumptionModelling />
         </div>
