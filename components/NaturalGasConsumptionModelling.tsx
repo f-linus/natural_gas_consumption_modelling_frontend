@@ -340,8 +340,69 @@ export const NaturalGasConsumptionModelling = () => {
             </a>
           </p>
         </div>
+
         <div>
-          <h4 className="text-3xl mt-14">Models & algorithms</h4>
+          <h4 className="text-3xl mt-14 mb-6">Models & libraries</h4>
+          <p>
+            NeuralProphet: Explainable Forecasting at Scale by Oskar Triebe and
+            Hansika Hewamalage and Polina Pilyugina and Nikolay Laptev and
+            Christoph Bergmeir and Ram Rajagopal. (2021)
+          </p>
+          <p>
+            <a
+              className="underline hover:text-gray-400"
+              href=""
+              ></a>
+          </p>
+          <p>
+            <a
+              className="underline hover:text-gray-400"
+              href="https://neuralprophet.com/"
+            >
+              https://neuralprophet.com/
+            </a>
+          </p>
+          <br />
+          <p>
+            statsmodels: Econometric and statistical modeling with python by
+            Seabold, Skipper and Perktold, Josef in 9th Python in Science
+            Conference (2010)
+          </p>
+          <p>
+            Used models: Multiple Linear Regression, Autoregressive model with
+            exegenous regressor (AR-X) and SARIMAX
+          </p>
+          <p>
+            <a
+              className="underline hover:text-gray-400"
+              href="https://www.statsmodels.org/"
+            >
+              https://www.statsmodels.org/
+            </a>
+          </p>
+          <br />
+          <p>
+            XGBoost: A Scalable Tree Boosting System by Chen, Tianqi and Guestrin,
+            Carlos in Proceedings of the 22nd ACM SIGKDD International Conference
+            on Knowledge Discovery and Data Mining (2016)
+          </p>
+          <p>
+            <a
+              className="underline hover:text-gray-400"
+              href="https://doi.org/10.1145/2939672.2939785"
+              >https://doi.org/10.1145/2939672.2939785</a>
+          </p>
+          <br />
+          <p>
+            pandas-dev/pandas: Pandas by The pandas development team (2020)
+          </p>
+          <p>
+            <a
+              className="underline hover:text-gray-400"
+              href="https://pandas.pydata.org/">
+              https://pandas.pydata.org/
+              </a>
+          </p>
         </div>
       </div>
     </div>
