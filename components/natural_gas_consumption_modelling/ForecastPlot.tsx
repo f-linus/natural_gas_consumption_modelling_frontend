@@ -91,11 +91,16 @@ export const ForecastPlot = (props: any) => {
         d.x <= historicConsumptionDataEndDate
     );
 
+    // Cut forecasted data to end of historic data + 1
+    const forecastConsumptionDataCropped2 = forecastConsumptionDataCropped.filter(
+      (d: any) => d.x >= historicConsumptionDataEndDate
+    );
+
     // Cut forecasted temperature data to the time period of the forecasted consumption data
     const forecastConsumptionDataStartDate =
-      forecastConsumptionDataCropped[0].x;
+      forecastConsumptionDataCropped2[0].x;
     const forecastConsumptionDataEndDate =
-      forecastConsumptionDataCropped[forecastConsumptionDataCropped.length - 1].x;
+    forecastConsumptionDataCropped2[forecastConsumptionDataCropped2.length - 1].x;
     const forecastedTemperatureDataCropped = forecastedTemperatureData.filter(
       (d: any) =>
         d.x >= forecastConsumptionDataStartDate &&
@@ -121,7 +126,7 @@ export const ForecastPlot = (props: any) => {
           },
           {
             label: "Consumption Forecast",
-            data: forecastConsumptionDataCropped,
+            data: forecastConsumptionDataCropped2,
             fill: false,
             borderColor: "rgba(230, 230, 230, 1.0)",
             borderWidth: borderWidth,
