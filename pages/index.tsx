@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex flex-col">
             <a
               href="https://www.linkedin.com/in/linus-folkerts-3276841b7/"
-              className="text-8xl md:text-9xl hover:text-gray-400"
+              className="text-8xl md:text-9xl hover:text-gray-400 text-right"
             >
               Linus Folkerts
             </a>
