@@ -1,5 +1,6 @@
 import React from "react";
-import { NaturalGasConsumptionForecastPlot } from "./natural_gas_consumption_modelling/NaturalGasConsumptionForecastPlot";
+import { ForecastPlot } from "./natural_gas_consumption_modelling/ForecastPlot";
+import { RegressorPlot } from "./natural_gas_consumption_modelling/RegressorPlot";
 
 export const NaturalGasConsumptionModelling = () => {
   // Get the data from the Google Cloud Storage backend
@@ -21,7 +22,7 @@ export const NaturalGasConsumptionModelling = () => {
 
   return (
     <div>
-      <NaturalGasConsumptionForecastPlot
+      <ForecastPlot
         data={data}
         forecastedTemperaturesEnabled={false}
       />
@@ -45,7 +46,7 @@ export const NaturalGasConsumptionModelling = () => {
       </p>
 
       <h3 className="text-3xl mt-14 text-right">Short-term forecast</h3>
-      <NaturalGasConsumptionForecastPlot
+      <ForecastPlot
         data={data}
         daysHistoric={7}
         daysForecasted={14}
@@ -72,7 +73,7 @@ export const NaturalGasConsumptionModelling = () => {
       </p>
 
       <h3 className="text-3xl mt-14 text-right">Long-term forecast</h3>
-      <NaturalGasConsumptionForecastPlot
+      <ForecastPlot
         data={data}
         daysHistoric={7}
         height={500}
@@ -102,6 +103,9 @@ export const NaturalGasConsumptionModelling = () => {
         lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
         euismod, nisl vel tincidunt lacinia,
       </p>
+
+      <h3 className="text-3xl mt-14 text-right">Potential regressors</h3>
+      <RegressorPlot />
 
       <h3 className="text-3xl mt-14 text-right">Acknowledgements</h3>
 

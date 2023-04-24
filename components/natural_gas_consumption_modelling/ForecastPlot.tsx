@@ -2,7 +2,7 @@ import React from "react";
 import Chart from "chart.js/auto";
 import "chartjs-adapter-date-fns";
 
-export const NaturalGasConsumptionForecastPlot = (props: any) => {
+export const ForecastPlot = (props: any) => {
   const {
     data,
     historicConsumptionEnabled = true,
