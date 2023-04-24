@@ -1,6 +1,6 @@
 [
   {
-    "origin": ["https://localhost:3000", "http://localhost:3000", "https://www.li-f.de"],
+    "origin": ["https://localhost:3000", "http://localhost:3000", "https://www.li-f.de", "https://li-f.de", "https://linusfolkerts.com", "https://www.linusfolkerts.com"],
     "method": ["GET"],
     "responseHeader": ["*"]
   }
