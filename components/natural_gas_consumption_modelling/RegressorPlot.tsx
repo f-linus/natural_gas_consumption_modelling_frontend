@@ -145,7 +145,7 @@ export const RegressorPlot = () => {
               display: true,
               text: "Temperature (°C)",
             },
-            position: "left",
+            position: "right",
             display: "auto",
           },
           gasPriceScale: {
@@ -154,7 +154,7 @@ export const RegressorPlot = () => {
               display: true,
               text: "Gas price (€/MWh)",
             },
-            position: "left",
+            position: "right",
             display: "auto",
           },
           oilePriceScale: {
@@ -163,7 +163,7 @@ export const RegressorPlot = () => {
               display: true,
               text: "Oil price (USD/bbl)",
             },
-            position: "left",
+            position: "right",
             display: "auto",
           },
           electricityPriceScale: {
@@ -172,7 +172,7 @@ export const RegressorPlot = () => {
               display: true,
               text: "Electricity price (€/MWhe)",
             },
-            position: "left",
+            position: "right",
             display: "auto",
           },
           euaPriceScale: {
@@ -181,7 +181,7 @@ export const RegressorPlot = () => {
               display: true,
               text: "EUAs price (€/tCO2e)",
             },
-            position: "left",
+            position: "right",
             display: "auto",
           },
           storageScale: {
@@ -190,7 +190,7 @@ export const RegressorPlot = () => {
               display: true,
               text: "Storage levels (TWh)",
             },
-            position: "left",
+            position: "right",
             display: "auto",
           },
         },

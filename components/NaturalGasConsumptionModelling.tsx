@@ -45,14 +45,8 @@ export const NaturalGasConsumptionModelling = () => {
         aliquet
       </p>
 
-      <h3 className="text-3xl mt-14 text-right">Short-term forecast</h3>
-      <ForecastPlot
-        data={data}
-        daysHistoric={7}
-        daysForecasted={14}
-        borderWidth={2.5}
-        height={600}
-      />
+      <h3 className="text-3xl mt-14 text-right">Potential regressors</h3>
+      <RegressorPlot />
 
       <p>
         Potential regressor, hypotheses and their result ........ Lorem ipsum
@@ -72,11 +66,13 @@ export const NaturalGasConsumptionModelling = () => {
         aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia,
       </p>
 
-      <h3 className="text-3xl mt-14 text-right">Long-term forecast</h3>
+      <h3 className="text-3xl mt-14 text-right">Short-term forecast</h3>
       <ForecastPlot
         data={data}
         daysHistoric={7}
-        height={500}
+        daysForecasted={14}
+        borderWidth={2.5}
+        height={600}
       />
 
       <p>
@@ -104,8 +100,37 @@ export const NaturalGasConsumptionModelling = () => {
         euismod, nisl vel tincidunt lacinia,
       </p>
 
-      <h3 className="text-3xl mt-14 text-right">Potential regressors</h3>
-      <RegressorPlot />
+      <h3 className="text-3xl mt-14 text-right">Long-term forecast</h3>
+      <ForecastPlot
+        data={data}
+        daysHistoric={7}
+        height={500}
+      />
+
+      <p>
+        Technical implementation and conclusion ......... Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl,
+        vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
+        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
+        euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae
+        aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl
+        nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl
+        vel tincidunt lacinia, Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl
+        aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel
+        tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et
+        nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl,
+        vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
+        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
+        euismod, nisl vel tincidunt lacinia, Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia,
+        nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod,
+        nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl
+        nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet
+        nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
+        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
+        euismod, nisl vel tincidunt lacinia,
+      </p>
 
       <h3 className="text-3xl mt-14 text-right">Acknowledgements</h3>
 
