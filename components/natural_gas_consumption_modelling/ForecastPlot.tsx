@@ -69,17 +69,6 @@ export const ForecastPlot = (props: any) => {
       historicConsumptionDataCropped = historicConsumptionData;
     }
 
-    // If daysForecasted is set, cut down forecasted consumption data
-    var forecastConsumptionDataCropped;
-    if (daysForecasted) {
-      forecastConsumptionDataCropped = forecastConsumptionData.slice(
-        0,
-        daysForecasted
-      );
-    } else {
-      forecastConsumptionDataCropped = forecastConsumptionData;
-    }
-
     // Cut historic temperature data to the time period of the historic consumption data
     const historicConsumptionDataStartDate =
       historicConsumptionDataCropped[0].x;
@@ -92,9 +81,20 @@ export const ForecastPlot = (props: any) => {
     );
 
     // Cut forecasted data to end of historic data + 1
-    const forecastConsumptionDataCropped2 = forecastConsumptionDataCropped.filter(
+    const forecastConsumptionDataCropped = forecastConsumptionData.filter(
       (d: any) => d.x >= historicConsumptionDataEndDate
     );
+
+    // If daysForecasted is set, cut down forecasted consumption data
+    var forecastConsumptionDataCropped2;
+    if (daysForecasted) {
+      forecastConsumptionDataCropped2 = forecastConsumptionDataCropped.slice(
+        0,
+        daysForecasted
+      );
+    } else {
+      forecastConsumptionDataCropped2 = forecastConsumptionDataCropped;
+    }
 
     // Cut forecasted temperature data to the time period of the forecasted consumption data
     const forecastConsumptionDataStartDate =
