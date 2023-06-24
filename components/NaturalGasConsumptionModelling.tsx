@@ -140,38 +140,32 @@ export const NaturalGasConsumptionModelling = () => {
 
       <p>
         {
-          "The primary aim of this project was to develop and deploy a public-facing natural gas forecasting model, which re-trains and updates predictions daily. The resultant data needs to be stored and served to the public in a straightforward manner."
+          "The primary aim of this project was to develop and deploy a public-facing natural gas forecasting model, which re-trains and updates predictions daily. The resultant data needs to be stored and served to the public in a straightforward manner. In terms of architecture, the design leans towards simplicity and efficiency. Both temperature and natural gas consumption prediction models are encapsulated in a Docker container as Python code. The results are saved using a storage service that channels forecasts via a backend to be accessed by a frontend. This entire backend operation is hosted on Google Cloud Platform."
         }
       </p>
       <br />
       <p>
         {
-          "In terms of architecture, the design leans towards simplicity and efficiency. Both temperature and natural gas consumption prediction models are encapsulated in a Docker container as Python code. The results are saved using a storage service that channels forecasts via a backend to be accessed by a frontend. This entire backend operation is hosted on Google Cloud Platform."
+          "A scheduling service is set up to activate daily model re-training and run the model at a certain time. The new forecasts are stored in Google Cloud Storage, from where they can be accessed by users through the frontend. The frontend comprises a web application built with TypeScript and the Next.js framework, with Tailwind CSS aiding in styling. The app's primary function is to visualize data retrieved from the storage endpoint on Google Cloud Storage, avoiding the need for implementing any additional logic."
         }
       </p>
       <br />
       <p>
         {
-          "A scheduling service is set up to activate daily model re-training and run the model at a certain time. The new forecasts are stored in Google Cloud Storage, from where they can be accessed by users through the frontend."
+          "While the model re-training and runs take place on the Docker container hosted on Google Cloud Platform, the frontend is also hosted on a fully managed platform, Vercel, to reduce costs and administrative tasks. Vercel, which offers free service for non-commercial use, links to a Git repository of a web application built with one of many approved frameworks, managing the deployment and serving of the web application. Though utilizing fully-managed infrastructure solutions may not be a necessity or suit everyone's unique requirements, in this instance, it helps to keep the solution simple and easily reproducible."
         }
       </p>
       <br />
       <p>
-        {
-          "The frontend comprises a web application built with TypeScript and the Next.js framework, with Tailwind CSS aiding in styling. The app's primary function is to visualize data retrieved from the storage endpoint on Google Cloud Storage, avoiding the need for implementing any additional logic."
-        }
-      </p>
-      <br />
-      <p>
-        {
-          "While the model re-training and runs take place on the Docker container hosted on Google Cloud Platform, the frontend is also hosted on a fully managed platform, Vercel, to reduce costs and administrative tasks. Vercel, which offers free service for non-commercial use, links to a Git repository of a web application built with one of many approved frameworks, managing the deployment and serving of the web application."
-        }
-      </p>
-      <br />
-      <p>
-        {
-          "Though utilizing fully-managed infrastructure solutions may not be a necessity or suit everyone's unique requirements, in this instance, it helps to keep the solution simple and easily reproducible."
-        }
+        The entire work presented is fully reproducible. Both backend (
+        <a className="underline hover:text-gray-400" href="GitHub">
+          https://github.com/f-linus/natural_gas_consumption_modelling
+        </a>
+        ) and frontend (
+        <a className="underline hover:text-gray-400" href="GitHub">
+          https://github.com/f-linus/natural_gas_consumption_modelling_frontend
+        </a>
+        ) code is available on GitHub.
       </p>
 
       <h3 className="text-3xl mt-14 text-right">Acknowledgements</h3>
