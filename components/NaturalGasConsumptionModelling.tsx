@@ -165,7 +165,8 @@ export const NaturalGasConsumptionModelling = () => {
         <a className="underline hover:text-gray-400" href="GitHub">
           https://github.com/f-linus/natural_gas_consumption_modelling_frontend
         </a>
-        ) code is available on GitHub.
+        ) code is available on GitHub, together with detailed instructions on
+        how to run the code.
       </p>
 
       <h3 className="text-3xl mt-14 text-right">Acknowledgements</h3>
