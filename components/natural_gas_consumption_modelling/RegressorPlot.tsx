@@ -63,6 +63,7 @@ export const RegressorPlot = () => {
             tension: 0.1,
             pointRadius: 0,
             yAxisID: "temperatureScale",
+            hidden: true,
           },
           {
             label: "Gas price",
@@ -73,6 +74,7 @@ export const RegressorPlot = () => {
             tension: 0.1,
             pointRadius: 0,
             yAxisID: "gasPriceScale",
+            hidden: true,
           },
           {
             label: "Oil price",
@@ -83,6 +85,7 @@ export const RegressorPlot = () => {
             tension: 0.1,
             pointRadius: 0,
             yAxisID: "oilePriceScale",
+            hidden: true,
           },
           {
             label: "Electricity price",
@@ -93,6 +96,7 @@ export const RegressorPlot = () => {
             tension: 0.1,
             pointRadius: 0,
             yAxisID: "electricityPriceScale",
+            hidden: true,
           },
           {
             label: "EUAs price",
