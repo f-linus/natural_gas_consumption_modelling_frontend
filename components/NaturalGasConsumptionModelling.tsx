@@ -158,12 +158,18 @@ export const NaturalGasConsumptionModelling = () => {
       <br />
       <p>
         The entire work presented is fully reproducible. Both backend (
-        <a className="underline hover:text-gray-400" href="GitHub">
-          https://github.com/f-linus/natural_gas_consumption_modelling
+        <a
+          className="underline hover:text-gray-400"
+          href="https://github.com/f-linus/natural_gas_consumption_modelling"
+        >
+          GitHub
         </a>
         ) and frontend (
-        <a className="underline hover:text-gray-400" href="GitHub">
-          https://github.com/f-linus/natural_gas_consumption_modelling_frontend
+        <a
+          className="underline hover:text-gray-400"
+          href="https://github.com/f-linus/natural_gas_consumption_modelling_frontend"
+        >
+          GitHub
         </a>
         ) code is available on GitHub, together with detailed instructions on
         how to run the code.
