@@ -119,7 +119,7 @@ export const NaturalGasConsumptionModelling = () => {
 
       <p>
         {
-          "After understanding the dynamics of natural gas consumption, the dynamics of natural gas consumption were analyzed. A model was designed, trained, and evaluated to forecast Germany's natural gas consumption. Previous models, such as a simple seasonal model and a piecewise-linear temperature model, showed promising results, but more sophisticated models are now established in literature. Several models are discussed, including multiple linear regression, Autoregressive Exogenous Model (ARX), Seasonal Autoregressive Integrated Moving Average Model with exogenous regressors (SARIMAX), XGBoost, and NeuralProphet."
+          "After understanding the dynamics of natural gas consumption, a model was designed, trained, and evaluated to forecast Germany's natural gas consumption. Previous models, such as a simple seasonal model and a piecewise-linear temperature model, showed promising results, but more sophisticated models are now established in literature. Several models are discussed, including multiple linear regression, Autoregressive Exogenous Model (ARX), Seasonal Autoregressive Integrated Moving Average Model with exogenous regressors (SARIMAX), XGBoost, and NeuralProphet."
         }
       </p>
       <br />
