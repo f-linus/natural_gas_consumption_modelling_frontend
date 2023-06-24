@@ -29,13 +29,13 @@ export const NaturalGasConsumptionModelling = () => {
           "Germany's dependence on natural gas is undeniable, with consumption of this fossil fuel rising steadily over the past decades. Even amidst the shift towards renewable energy sources, natural gas continues to play a crucial role, primarily as a transition fuel, enabling organisations and policymakers to meet short-term CO2 reduction targets. It's also critical for heat-intensive industrial processes and residential heating, areas that have traditionally been difficult to transition to clean energy sources. Given the unique position of natural gas within our economic system, understanding and forecasting its demand is of paramount importance, particularly in times of supply disruption, such as during the Ukrainian war. Proper planning and procurement of natural gas supplies is essential to prevent severe shortages that could drastically affect a country's gross domestic product."
         }
       </p>
-      <br/>
+      <br />
       <p>
         {
           "Attempts to forecast natural gas consumption have a long history, with early models focusing on statistical approaches that took into account aspects such as household income, GDP and ambient temperature. The advent of advanced computing resources led to the application of more sophisticated models, including Artificial Neural Networks (ANNs), Support Vector Regression (SVR) and deep learning models such as Long Short-Term Memory (LSTM) models. While these forecasting techniques have led to unprecedented advances, much of the previous work on natural gas consumption modelling lacks reproducibility due to limited access to the underlying data or exact model parameters. This is often due to licensing restrictions imposed on authors."
         }
       </p>
-      <br/>
+      <br />
       <p>
         {
           "This project aims to bridge this gap by providing an open source and publicly available platform for natural gas consumption forecasting in Germany. The focus is on ensuring that critical data on the dependent variable and potential independent variables are publicly available, that forecasts are implemented in a time-efficient manner using state-of-the-art models and frameworks, and that these forecasts are continuously published and productized. The aim is to make energy-related scientific issues, which have a significant impact on everyday life, more accessible to the general public."
@@ -46,21 +46,66 @@ export const NaturalGasConsumptionModelling = () => {
       <RegressorPlot />
 
       <p>
-        Potential regressor, hypotheses and their result ........ Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel
-        tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et
-        nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl,
-        vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae
-        aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia,
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
-        nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl
-        nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet
-        nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae
-        aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia,
+        {
+          "Finding the right data for a model can be challenging. Dependent variables for the model have been established in literature. Recent works offer an overview of factors influencing natural gas consumption in today's energy market. A study of literature surveys and discussions was conducted to identify consumption indicators."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "Special challenges are faced in this work. All datasets used must be open-source and programmatically accessible for the model."
+        }
+      </p>
+      <br />
+      <p>{"The potential regressors considered for the model are:"}</p>
+      <ul>
+        <li>
+          {
+            "Temperature: The relationship between natural gas consumption and temperature is well-established in literature."
+          }
+        </li>
+        <li>
+          {
+            'Natural gas prices: The influence of pricing on consumption is well-studied, described through "price elasticity."'
+          }
+        </li>
+        <li>
+          {
+            "Crude oil prices: Prices of other energy commodities can impact natural gas consumption due to substitution effects."
+          }
+        </li>
+        <li>
+          {
+            "Coal prices: Wholesale prices of coal can also affect natural gas consumption."
+          }
+        </li>
+        <li>
+          {
+            "Electricity prices: Electricity is an energy commodity that can substitute natural gas to some extent."
+          }
+        </li>
+        <li>
+          {
+            "Auction prices of European Emission Allowances (EUAs): The European Emission Trading System caps natural gas consumption, but the relationship can be both positive and negative."
+          }
+        </li>
+        <li>
+          {
+            "Natural gas storage levels: Storage levels of natural gas can serve as an indicator of demand and consumption."
+          }
+        </li>
+      </ul>
+      <br />
+      <p>
+        {
+          "To obtain the necessary data, various sources are used. Consumption data for natural gas in Germany is provided by Trading Hub Europe GmbH. Temperature data is sourced from the atmospheric reanalysis model ERA-5 and real-time weather information from Open-meteo. Natural gas prices are obtained from Trading Hub Europe GmbH. Brent crude oil prices are available from the U.S. Energy Information Administration. Electricity prices data is provided by Ember. Auction prices of European Emission Allowances (EUAs) are obtained from the European Energy Exchange AG (EEX). Natural gas storage levels data is sourced from Engie."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "The data analysis reveals seasonal patterns in natural gas consumption and the importance of temperature as a factor. The historic data of consumption, temperature, and other variables are examined in the figures provided."
+        }
       </p>
 
       <h3 className="text-3xl mt-14 text-right">Short-term forecast</h3>
