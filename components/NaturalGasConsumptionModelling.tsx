@@ -25,11 +25,11 @@ export const NaturalGasConsumptionModelling = () => {
       <ForecastPlot data={data} forecastedTemperaturesEnabled={false} />
 
       <p>
-        Germany's dependence on natural gas is undeniable, with consumption of
+        Germany&apos;'s dependence on natural gas is undeniable, with consumption of
         this fossil fuel rising steadily over the past decades. Even amidst the
         shift towards renewable energy sources, natural gas continues to play a
         crucial role, primarily as a transition fuel, enabling organisations and
-        policymakers to meet short-term CO2 reduction targets. It's also
+        policymakers to meet short-term CO2 reduction targets. It&apos;'s also
         critical for heat-intensive industrial processes and residential
         heating, areas that have traditionally been difficult to transition to
         clean energy sources.
@@ -41,7 +41,7 @@ export const NaturalGasConsumptionModelling = () => {
         particularly in times of supply disruption, such as during the Ukrainian
         war. Proper planning and procurement of natural gas supplies is
         essential to prevent severe shortages that could drastically affect a
-        country's gross domestic product.
+        country&apos;'s gross domestic product.
       </p>
 
       <p>
