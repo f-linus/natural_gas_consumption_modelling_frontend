@@ -25,25 +25,55 @@ export const NaturalGasConsumptionModelling = () => {
       <ForecastPlot data={data} forecastedTemperaturesEnabled={false} />
 
       <p>
-        Germany's dependence on natural gas is undeniable, with consumption of this fossil fuel rising steadily over the past decades. Even amidst the shift towards renewable energy sources, natural gas continues to play a crucial role, primarily as a transition fuel, enabling organisations and policymakers to meet short-term CO2 reduction targets. It's also critical for heat-intensive industrial processes and residential heating, areas that have traditionally been difficult to transition to clean energy sources.
-      </p>
-      
-      <p>
-        Given the unique position of natural gas within our economic system, understanding and forecasting its demand is of paramount importance, particularly in times of supply disruption, such as during the Ukrainian war. Proper planning and procurement of natural gas supplies is essential to prevent severe shortages that could drastically affect a country's gross domestic product.
+        Germany's dependence on natural gas is undeniable, with consumption of
+        this fossil fuel rising steadily over the past decades. Even amidst the
+        shift towards renewable energy sources, natural gas continues to play a
+        crucial role, primarily as a transition fuel, enabling organisations and
+        policymakers to meet short-term CO2 reduction targets. It's also
+        critical for heat-intensive industrial processes and residential
+        heating, areas that have traditionally been difficult to transition to
+        clean energy sources.
       </p>
 
       <p>
-        Attempts to forecast natural gas consumption have a long history, with early models focusing on statistical approaches that took into account aspects such as household income, GDP and ambient temperature. The advent of advanced computing resources led to the application of more sophisticated models, including Artificial Neural Networks (ANNs), Support Vector Regression (SVR) and deep learning models such as Long Short-Term Memory (LSTM) models.
+        Given the unique position of natural gas within our economic system,
+        understanding and forecasting its demand is of paramount importance,
+        particularly in times of supply disruption, such as during the Ukrainian
+        war. Proper planning and procurement of natural gas supplies is
+        essential to prevent severe shortages that could drastically affect a
+        country's gross domestic product.
       </p>
-      
+
       <p>
-        While these forecasting techniques have led to unprecedented advances, much of the previous work on natural gas consumption modelling lacks reproducibility due to limited access to the underlying data or exact model parameters. This is often due to licensing restrictions imposed on authors.
+        Attempts to forecast natural gas consumption have a long history, with
+        early models focusing on statistical approaches that took into account
+        aspects such as household income, GDP and ambient temperature. The
+        advent of advanced computing resources led to the application of more
+        sophisticated models, including Artificial Neural Networks (ANNs),
+        Support Vector Regression (SVR) and deep learning models such as Long
+        Short-Term Memory (LSTM) models.
       </p>
-      
+
       <p>
-        This project aims to bridge this gap by providing an open source and publicly available platform for natural gas consumption forecasting in Germany. The focus is on ensuring that critical data on the dependent variable and potential independent variables are publicly available, that forecasts are implemented in a time-efficient manner using state-of-the-art models and frameworks, and that these forecasts are continuously published and productized. The aim is to make energy-related scientific issues, which have a significant impact on everyday life, more accessible to the general public.
+        While these forecasting techniques have led to unprecedented advances,
+        much of the previous work on natural gas consumption modelling lacks
+        reproducibility due to limited access to the underlying data or exact
+        model parameters. This is often due to licensing restrictions imposed on
+        authors.
       </p>
-      
+
+      <p>
+        This project aims to bridge this gap by providing an open source and
+        publicly available platform for natural gas consumption forecasting in
+        Germany. The focus is on ensuring that critical data on the dependent
+        variable and potential independent variables are publicly available,
+        that forecasts are implemented in a time-efficient manner using
+        state-of-the-art models and frameworks, and that these forecasts are
+        continuously published and productized. The aim is to make
+        energy-related scientific issues, which have a significant impact on
+        everyday life, more accessible to the general public.
+      </p>
+
       <h3 className="text-3xl mt-14 text-right">Potential regressors</h3>
       <RegressorPlot />
 
@@ -351,10 +381,7 @@ export const NaturalGasConsumptionModelling = () => {
             Christoph Bergmeir and Ram Rajagopal. (2021)
           </p>
           <p>
-            <a
-              className="underline hover:text-gray-400"
-              href=""
-              ></a>
+            <a className="underline hover:text-gray-400" href=""></a>
           </p>
           <p>
             <a
@@ -384,26 +411,27 @@ export const NaturalGasConsumptionModelling = () => {
           </p>
           <br />
           <p>
-            XGBoost: A Scalable Tree Boosting System by Chen, Tianqi and Guestrin,
-            Carlos in Proceedings of the 22nd ACM SIGKDD International Conference
-            on Knowledge Discovery and Data Mining (2016)
+            XGBoost: A Scalable Tree Boosting System by Chen, Tianqi and
+            Guestrin, Carlos in Proceedings of the 22nd ACM SIGKDD International
+            Conference on Knowledge Discovery and Data Mining (2016)
           </p>
           <p>
             <a
               className="underline hover:text-gray-400"
               href="https://doi.org/10.1145/2939672.2939785"
-              >https://doi.org/10.1145/2939672.2939785</a>
+            >
+              https://doi.org/10.1145/2939672.2939785
+            </a>
           </p>
           <br />
-          <p>
-            pandas-dev/pandas: Pandas by The pandas development team (2020)
-          </p>
+          <p>pandas-dev/pandas: Pandas by The pandas development team (2020)</p>
           <p>
             <a
               className="underline hover:text-gray-400"
-              href="https://pandas.pydata.org/">
+              href="https://pandas.pydata.org/"
+            >
               https://pandas.pydata.org/
-              </a>
+            </a>
           </p>
         </div>
       </div>
