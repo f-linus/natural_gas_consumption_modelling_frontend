@@ -118,28 +118,27 @@ export const NaturalGasConsumptionModelling = () => {
       />
 
       <p>
-        Modelling ......... Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl,
-        vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae
-        aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl
-        nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl
-        vel tincidunt lacinia, Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl
-        aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel
-        tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et
-        nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl,
-        vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia, Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia,
-        nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod,
-        nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl
-        nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet
-        nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia,
+        {
+          "After understanding the dynamics of natural gas consumption, the dynamics of natural gas consumption were analyzed. A model was designed, trained, and evaluated to forecast Germany's natural gas consumption. Previous models, such as a simple seasonal model and a piecewise-linear temperature model, showed promising results, but more sophisticated models are now established in literature. Several models are discussed, including multiple linear regression, Autoregressive Exogenous Model (ARX), Seasonal Autoregressive Integrated Moving Average Model with exogenous regressors (SARIMAX), XGBoost, and NeuralProphet."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "Multiple linear regression uses a linear combination of regressors to predict natural gas consumption. The data is split into a training set and a test set to evaluate the model's predictive performance. The ARX model incorporates past values and external regressors to predict consumption. SARIMAX extends the ARX model by considering seasonality, integration, and moving average components. XGBoost is an ensemble model that combines many small models for accurate predictions. NeuralProphet is a hybrid model that combines classical time series approaches with deep learning."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "The performance of these models is compared using metrics like Mean Absolute Percentage Error (MAPE). The temperature-only versions of ARX and NeuralProphet are also evaluated to create a fully automated forecasting system. The NeuralProphet model performs well in both short-term and long-term forecasts. A hybrid approach is proposed for temperature forecasting, combining short-term forecasts from weather services with a mid-term model trained on historic data. The combined temperature forecasts, along with the temperature-only NeuralProphet model, enable the forecasting of natural gas consumption for the next 365 days."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "This approach strikes a balance between predictive performance and deployability, making it suitable for practical applications."
+        }
       </p>
 
       <h3 className="text-3xl mt-14 text-right">Long-term forecast</h3>
