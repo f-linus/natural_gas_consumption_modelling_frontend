@@ -139,37 +139,47 @@ export const NaturalGasConsumptionModelling = () => {
       <ForecastPlot data={data} daysHistoric={7} height={500} />
 
       <p>
-        Technical implementation and conclusion ......... Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae
-        aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl
-        nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl
-        vel tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl
-        et nisl. Sed euismod, nisl vel tincidunt lacinia, Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae
-        aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl
-        nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl
-        vel tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl
-        et nisl. Sed euismod, nisl vel tincidunt lacinia, Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt
-        lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed
-        euismod, nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae
-        aliquam nisl nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl
-        nisl aliquet nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl
-        vel tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl nisl
-        et nisl. Sed euismod, nisl vel tincidunt lacinia,
+        {
+          "The primary aim of this project was to develop and deploy a public-facing natural gas forecasting model, which re-trains and updates predictions daily. The resultant data needs to be stored and served to the public in a straightforward manner."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "In terms of architecture, the design leans towards simplicity and efficiency. Both temperature and natural gas consumption prediction models are encapsulated in a Docker container as Python code. The results are saved using a storage service that channels forecasts via a backend to be accessed by a frontend. This entire backend operation is hosted on Google Cloud Platform."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "A scheduling service is set up to activate daily model re-training and run the model at a certain time. The new forecasts are stored in Google Cloud Storage, from where they can be accessed by users through the frontend."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "The frontend comprises a web application built with TypeScript and the Next.js framework, with Tailwind CSS aiding in styling. The app's primary function is to visualize data retrieved from the storage endpoint on Google Cloud Storage, avoiding the need for implementing any additional logic."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "While the model re-training and runs take place on the Docker container hosted on Google Cloud Platform, the frontend is also hosted on a fully managed platform, Vercel, to reduce costs and administrative tasks. Vercel, which offers free service for non-commercial use, links to a Git repository of a web application built with one of many approved frameworks, managing the deployment and serving of the web application."
+        }
+      </p>
+      <br />
+      <p>
+        {
+          "Though utilizing fully-managed infrastructure solutions may not be a necessity or suit everyone's unique requirements, in this instance, it helps to keep the solution simple and easily reproducible."
+        }
       </p>
 
       <h3 className="text-3xl mt-14 text-right">Acknowledgements</h3>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
-        nisl vel tincidunt lacinia, nisl nisl aliquet nisl, vitae aliquam nisl
-        nisl et nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquet
-        nisl, vitae aliquam nisl nisl et nisl. Sed euismod, nisl vel
+        {
+          "This work was only possible due to the large number of already existing works in the realm of data science, energy forecasting and time series modelling."
+        }
       </p>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
