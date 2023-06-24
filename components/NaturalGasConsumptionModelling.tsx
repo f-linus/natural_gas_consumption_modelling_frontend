@@ -26,25 +26,13 @@ export const NaturalGasConsumptionModelling = () => {
 
       <p>
         {
-          "Germany's dependence on natural gas is undeniable, with consumption of this fossil fuel rising steadily over the past decades. Even amidst the shift towards renewable energy sources, natural gas continues to play a crucial role, primarily as a transition fuel, enabling organisations and policymakers to meet short-term CO2 reduction targets. It's also critical for heat-intensive industrial processes and residential heating, areas that have traditionally been difficult to transition to clean energy sources."
+          "Germany's dependence on natural gas is undeniable, with consumption of this fossil fuel rising steadily over the past decades. Even amidst the shift towards renewable energy sources, natural gas continues to play a crucial role, primarily as a transition fuel, enabling organisations and policymakers to meet short-term CO2 reduction targets. It's also critical for heat-intensive industrial processes and residential heating, areas that have traditionally been difficult to transition to clean energy sources. Given the unique position of natural gas within our economic system, understanding and forecasting its demand is of paramount importance, particularly in times of supply disruption, such as during the Ukrainian war. Proper planning and procurement of natural gas supplies is essential to prevent severe shortages that could drastically affect a country's gross domestic product."
         }
       </p>
       <br/>
       <p>
         {
-          "Given the unique position of natural gas within our economic system, understanding and forecasting its demand is of paramount importance, particularly in times of supply disruption, such as during the Ukrainian war. Proper planning and procurement of natural gas supplies is essential to prevent severe shortages that could drastically affect a country's gross domestic product."
-        }
-      </p>
-      <br/>
-      <p>
-        {
-          "Attempts to forecast natural gas consumption have a long history, with early models focusing on statistical approaches that took into account aspects such as household income, GDP and ambient temperature. The advent of advanced computing resources led to the application of more sophisticated models, including Artificial Neural Networks (ANNs), Support Vector Regression (SVR) and deep learning models such as Long Short-Term Memory (LSTM) models."
-        }
-      </p>
-      <br/>
-      <p>
-        {
-          "While these forecasting techniques have led to unprecedented advances, much of the previous work on natural gas consumption modelling lacks reproducibility due to limited access to the underlying data or exact model parameters. This is often due to licensing restrictions imposed on authors."
+          "Attempts to forecast natural gas consumption have a long history, with early models focusing on statistical approaches that took into account aspects such as household income, GDP and ambient temperature. The advent of advanced computing resources led to the application of more sophisticated models, including Artificial Neural Networks (ANNs), Support Vector Regression (SVR) and deep learning models such as Long Short-Term Memory (LSTM) models. While these forecasting techniques have led to unprecedented advances, much of the previous work on natural gas consumption modelling lacks reproducibility due to limited access to the underlying data or exact model parameters. This is often due to licensing restrictions imposed on authors."
         }
       </p>
       <br/>
